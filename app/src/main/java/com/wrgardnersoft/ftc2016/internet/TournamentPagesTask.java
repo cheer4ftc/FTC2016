@@ -51,18 +51,13 @@ public class TournamentPagesTask extends AsyncTask<Void, Void, Void> {
             MyApp myApp = MyApp.getInstance();
             String tournamentPagesUrl = "https://docs.google.com/spreadsheets/d/1fKt9F-Wh82Zdd-Xk3BZQB-IuZIjAxkpgxXTVh0mEG1A/gviz/tq?tqx=out:html&tq=SELECT%20F%2C%20G%2C%20H%20WHERE%20E%20=%20%27"
                 + tournamentCode + "%27&gid=2";
-            //Log.i("Tournament Code", tournamentCode);
-            //Log.i("Tournament Pages URL", tournamentPagesUrl);
+
             Document doc = Jsoup.connect(tournamentPagesUrl).get();
-            //Log.i("Checking", "X");
             Element table = doc.select("table").get(0);
-            //Log.i("Checking", "X");
             Elements rows = table.select("tr");
-            //Log.i("Checking", "X");
             Element row = rows.get(1);
-            //Log.i("Checking", "X");
             Elements cols = row.select("td");
-            //Log.i("Checking", "X");
+
 
             for (int i=0; i<3; i++) {
                 myApp.setServerAddressString(i, String.valueOf(cols.get(i).text()));

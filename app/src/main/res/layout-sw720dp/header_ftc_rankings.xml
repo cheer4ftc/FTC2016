@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ftc_header_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/teams_list_view"
+    android:orientation="horizontal"
+    android:paddingRight="10dp">
+
+    <TextView
+        android:id="@+id/head_rank"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:gravity="center_horizontal"
+        android:text="Rank"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/head_number"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:singleLine="true"
+        android:text="Team"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/head_qp"
+        android:layout_width="66dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:gravity="center_horizontal"
+        android:text="QP"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/head_rp"
+        android:layout_width="66dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:gravity="center_horizontal"
+        android:text="RP"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+    <TextView
+        android:id="@+id/head_highest"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:gravity="center_horizontal"
+        android:text="High"
+        android:textColor="@color/gray"
+        android:textSize="24sp" />
+    <TextView
+        android:id="@+id/head_mp"
+        android:layout_width="66dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:gravity="center_horizontal"
+        android:text="MP"
+        android:textColor="@color/gray"
+        android:textSize="24sp" />
+
+
+
+    <TextView
+        android:id="@+id/head_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

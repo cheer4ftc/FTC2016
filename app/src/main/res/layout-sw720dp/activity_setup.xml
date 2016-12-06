@@ -1,0 +1,211 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:textAlignment="center"
+    android:weightSum="1"
+    tools:context=".SetupActivity">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Tournament Code"
+                android:paddingTop="16dp"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/tournamentCodeEditText"
+                android:layout_width="wrap_content"
+                android:minWidth="150dp"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="textUri"
+                android:textSize="24sp"/>
+
+            <Button
+                android:id="@+id/enterCodeButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:onClick="onClickEnterCodeButton"
+                android:text="Get Pages for This Code" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="OR"
+                android:paddingTop="16dp"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Server Base Address"
+                android:paddingTop="16dp"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="http://"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/baseAddressEditText"
+                    android:layout_width="match_parent"
+                    android:minWidth="150dp"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="textUri"
+                    android:textSize="24sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="FTC Rankings Page"
+                android:paddingTop="16dp"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/rankingsPageEditText"
+                    android:layout_width="match_parent"
+                    android:minWidth="150dp"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="textUri"
+                    android:textSize="24sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Match Details or Match Results Page"
+                android:paddingTop="16dp"
+                android:textSize="24sp" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/matchPageEditText"
+                    android:layout_width="match_parent"
+                    android:minWidth="150dp"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="textUri"
+                    android:textSize="24sp"/>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/setupDoneButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:onClick="onClickSetupDoneButton"
+                android:text="Start App using these pages" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Instructions:"
+                android:textColor="@color/black"
+                android:paddingTop="16dp"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Go to cheer4ftc.blogspot.com to find the Tournament code for your tournament. Enter the code and get the pages for that tournament. Then click the Start App button to begin. You may need to press the refresh button to update the data."
+                android:textColor="@color/black"
+                android:paddingTop="16dp"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="If there is no Tournament code for your tournament, you can manually enter the base address, rankings page, and match details or match results page."
+                android:textColor="@color/black"
+                android:paddingTop="16dp"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="To use the live webserver from the scoring software, enter 'live' for the Tournament code and ask your Tournament organizer for the server base address."
+                android:textColor="@color/black"
+                android:paddingTop="16dp"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="To get Tournament codes for your tournaments, email the tournament information and the locations of the ranking and match results pages to wrgardnersoft@gmail.com."
+                android:textColor="@color/black"
+                android:paddingTop="16dp"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

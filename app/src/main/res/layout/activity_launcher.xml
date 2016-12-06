@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.wrgardnersoft.ftconline.LauncherActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="0dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="Welcome to FTC Online 2016!"
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:padding="8dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="This app connects to an online server and displays match, ranking, and stat information provided by the server."
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/start_setup_button"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start Setup"
+                android:onClick="onClickStartSetupButton" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

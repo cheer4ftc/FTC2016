@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/details_container"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:paddingRight="10dp">
+
+<TextView
+    android:id="@+id/head_number"
+    android:layout_width="65dp"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:singleLine="true"
+    android:text="Team"
+    android:textColor="@color/black"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    android:clickable="true"
+    android:onClick="onClickNumberTextView" />
+
+<TextView
+    android:id="@+id/head_auto"
+    android:layout_width="65dp"
+    android:layout_height="wrap_content"
+    android:singleLine="true"
+    android:gravity="right"
+    android:text="Auto"
+    android:textColor="@color/black"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    android:clickable="true"
+    android:onClick="onClickAutoTextView" />
+
+<TextView
+    android:id="@+id/head_teleop"
+    android:layout_width="65dp"
+    android:layout_height="wrap_content"
+    android:singleLine="true"
+    android:gravity="right"
+    android:text="Tele"
+    android:textColor="@color/black"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    android:clickable="true"
+    android:onClick="onClickTeleopTextView" />
+
+<TextView
+    android:id="@+id/head_endg"
+    android:layout_width="65dp"
+    android:layout_height="wrap_content"
+    android:singleLine="true"
+    android:gravity="right"
+    android:text="EndG"
+    android:textColor="@color/black"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    android:clickable="true"
+    android:onClick="onClickEndGameTextView" />
+
+<TextView
+    android:id="@+id/head_pen"
+    android:layout_width="65dp"
+    android:layout_height="wrap_content"
+    android:singleLine="true"
+    android:gravity="right"
+    android:text="Pen"
+    android:textColor="@color/black"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    android:clickable="true"
+    android:onClick="onClickPenaltyTextView" />
+
+<TextView
+    android:id="@+id/head_tot"
+    android:layout_width="65dp"
+    android:layout_height="wrap_content"
+    android:singleLine="true"
+    android:gravity="right"
+    android:text="Tot"
+    android:textColor="@color/black"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    android:clickable="true"
+    android:onClick="onClickTotalTextView" />
+
+
+<TextView
+    android:id="@+id/head_name"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:singleLine="true"
+    android:text="Name"
+    android:textColor="@color/black"
+    android:paddingLeft="16dp"
+    android:textSize="16sp"
+    android:textStyle="bold" />
+
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/details_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingRight="10dp">
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:singleLine="true"
+        android:text="1234"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/auto"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="50.0"
+        android:gravity="right"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:id="@+id/tele"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="100"
+        android:gravity="right"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/endg"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="100"
+        android:gravity="right"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:id="@+id/pen"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="0"
+        android:gravity="right"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:id="@+id/tot"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="0"
+        android:gravity="right"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="254"
+        android:paddingLeft="16dp"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ftc_rank_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="140dp">
+
+            <LinearLayout
+                android:id="@+id/ftc_rank_row1_container"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:minWidth="80dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/rank"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.65"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:gravity="right"
+                    android:text="254"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/rankcolon"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:gravity="right"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/number"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:gravity="right"
+                    android:text="254"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="254"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                android:layout_toRightOf="@id/ftc_rank_row1_container"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ftc_rank_row2_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/qpt"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="QP:"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/qp"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="(12-0-0)"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/rpt"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="RP:"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/rp"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="(12-0-0)"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+
+
+            <TextView
+                android:id="@+id/highestt"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="High:"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/highest"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="(12-0-0)"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/mpt"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Played:"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/mp"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="(12-0-0)"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

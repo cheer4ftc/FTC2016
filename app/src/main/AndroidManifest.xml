@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wrgardnersoft.ftc2016" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.wrgardnersoft.ftc2016.models.MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.wrgardnersoft.ftc2016.activities.LauncherActivity"
+            android:label="@string/title_activity_launcher" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wrgardnersoft.ftc2016.activities.SetupActivity"
+            android:label="@string/setup"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.wrgardnersoft.ftc2016.activities.MyTeamActivity"
+            android:label="@string/myTeam" >
+        </activity>
+        <activity
+            android:name="com.wrgardnersoft.ftc2016.activities.MyTeamStatsActivity"
+            android:label="Team Stats" >
+        </activity>
+        <activity
+            android:name="com.wrgardnersoft.ftc2016.activities.MyMatchActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/myMatch"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wrgardnersoft.ftc2016.activities.MyDetailedMatchActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/myDetailedMatch"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wrgardnersoft.ftc2016.activities.TeamsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/teams" >
+        </activity>
+        <activity
+            android:name="com.wrgardnersoft.ftc2016.activities.MatchesActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/matches" >
+        </activity>
+        <activity
+            android:name="com.wrgardnersoft.ftc2016.activities.FtcRankingsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/ftcRankings" >
+        </activity>
+        <activity
+            android:name="com.wrgardnersoft.ftc2016.activities.StatRankingsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/statRankings" >
+        </activity>
+        <activity
+            android:name="com.wrgardnersoft.ftc2016.activities.StatInfoActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/statInfo" >
+        </activity>
+        <activity
+            android:name="com.wrgardnersoft.ftc2016.activities.StatDetailsActivity"
+            android:label="@string/title_activity_stat_details" >
+        </activity>
+    </application>
+
+</manifest>

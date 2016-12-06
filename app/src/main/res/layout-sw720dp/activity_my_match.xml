@@ -1,0 +1,343 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:textAlignment="center"
+    android:weightSum="1"
+    tools:context=".MyMatchActivity"
+    android:background="#ffffffff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/my_match_title"
+        android:padding="8dp"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_match_title"
+        android:gravity="center_horizontal"
+        android:id="@+id/tableLayout">
+
+        <TableRow
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/mm_nTeam"
+                android:text="@string/Teams"
+                android:textSize="24sp"
+                android:padding="8dp"
+                android:gravity="right"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/mm_red_alliance"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:orientation="vertical"
+                android:background="@drawable/match_team_selector_red"
+                android:clickable="true">
+
+                <TextView
+                    android:id="@+id/mm_rT0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Red#1"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:background="@drawable/match_team_selector_red" />
+
+                <TextView
+                    android:id="@+id/mm_rT1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Red#2"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:background="@drawable/match_team_selector_red" />
+
+                <TextView
+                    android:id="@+id/mm_rT2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Red#3"
+                    android:layout_weight="0"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:background="@drawable/match_team_selector_red" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mm_blue_alliance"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:orientation="vertical"
+                android:background="@drawable/match_team_selector_blue"
+                android:clickable="true">
+
+                <TextView
+                    android:id="@+id/mm_bT0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Blue#1"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:background="@drawable/match_team_selector_blue" />
+
+                <TextView
+                    android:id="@+id/mm_bT1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Blue#2"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:background="@drawable/match_team_selector_blue" />
+
+                <TextView
+                    android:id="@+id/mm_bT2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Blue#3"
+                    android:layout_weight="0"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:background="@drawable/match_team_selector_blue" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:text="@string/total"
+                android:gravity="right"
+                android:padding="8dp"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mm_rTot"
+                android:text="@string/total"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:background="@drawable/match_team_selector_red"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mm_bTot"
+                android:text="@string/total"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:background="@drawable/match_team_selector_blue"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:text="@string/autonomous"
+                android:gravity="right"
+                android:padding="8dp"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/mm_rAuto"
+                android:text="@string/total"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:background="@drawable/match_team_selector_red" />
+
+            <TextView
+                android:id="@+id/mm_bAuto"
+                android:text="@string/total"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:background="@drawable/match_team_selector_blue" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:text="@string/autoBonus"
+                android:gravity="right"
+                android:textSize="24sp"
+                android:padding="8dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/mm_rAutoB"
+                android:text="@string/total"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:padding="8dp"
+                android:layout_width="72dp"
+                android:textColor="@color/black"
+                android:background="@drawable/match_team_selector_red" />
+
+            <TextView
+                android:id="@+id/mm_bAutoB"
+                android:text="@string/total"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:padding="8dp"
+                android:layout_width="72dp"
+                android:textColor="@color/black"
+                android:background="@drawable/match_team_selector_blue" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:text="@string/teleop"
+                android:gravity="right"
+                android:textSize="24sp"
+                android:padding="8dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/mm_rTele"
+                android:text="@string/total"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:padding="8dp"
+                android:layout_width="72dp"
+                android:textColor="@color/black"
+                android:background="@drawable/match_team_selector_red" />
+
+            <TextView
+                android:id="@+id/mm_bTele"
+                android:text="@string/total"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:padding="8dp"
+                android:layout_width="72dp"
+                android:textColor="@color/black"
+                android:background="@drawable/match_team_selector_blue" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:text="@string/endGame"
+                android:gravity="right"
+                android:padding="8dp"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/mm_rEndG"
+                android:text="@string/total"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="24sp"
+                android:layout_width="72dp"
+                android:textColor="@color/black"
+                android:background="@drawable/match_team_selector_red" />
+
+            <TextView
+                android:id="@+id/mm_bEndG"
+                android:text="@string/total"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="24sp"
+                android:layout_width="72dp"
+                android:textColor="@color/black"
+                android:background="@drawable/match_team_selector_blue" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:text="@string/penalty"
+                android:gravity="right"
+                android:padding="8dp"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/mm_rPen"
+                android:text="@string/total"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="24sp"
+                android:layout_width="72dp"
+                android:textColor="@color/black"
+                android:background="@drawable/match_team_selector_red" />
+
+            <TextView
+                android:id="@+id/mm_bPen"
+                android:text="@string/total"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="24sp"
+                android:layout_width="72dp"
+                android:textColor="@color/black"
+                android:background="@drawable/match_team_selector_blue" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:textAlignment="center"
+    android:weightSum="1"
+    tools:context=".MyTeamActivity">
+
+
+    <ListView
+        android:id="@+id/teams_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"> </ListView>
+
+    <include layout="@layout/header_ftc_rankings"
+        android:id="@+id/header_ftc_rankings"
+        android:layout_below="@+id/teams_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ListView
+        android:id="@+id/ftc_rankings_list_view"
+        android:layout_below="@+id/header_ftc_rankings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"> </ListView>
+
+    <include layout="@layout/header_stat_rankings"
+        android:id="@+id/header_stat_rankings"
+        android:layout_below="@+id/ftc_rankings_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <ListView
+        android:id="@+id/stat_rankings_list_view"
+        android:layout_below="@+id/header_stat_rankings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ExpandableListView
+        android:id="@+id/matches_expListView"
+        android:layout_below="@id/stat_rankings_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FTC 2016</string>
+    <string name="title_activity_launcher">FTC 2016</string>
+    <string name="setup">Setup</string>
+    <string name="Div1ServerAddress">Div #1 Server Address</string>
+    <string name="Div0ServerAddress">Div #0 Server Address</string>
+    <string name="myTeam">My Team</string>
+    <string name="division">Division</string>
+    <string name="teamNum">Team #</string>
+    <string name="exit">Exit</string>
+    <string name="teams">Teams</string>
+    <string name="matches">Matches</string>
+    <string name="ftcRankings">FTC Rank</string>
+    <string name="statRankings">Stat Rank</string>
+    <string name="hello_world">Hello World</string>
+    <string name="change_division">Change Division</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="done">Done</string>
+    <string name="dualDivisionTournament">Dual Division Tournament?</string>
+    <string name="division1ServerAddress">Division #1 Server Address</string>
+    <string name="division2ServerAddress">Division #2 Server Address</string>
+    <string name="back">Back</string>
+    <string name="myMatch">My Match</string>
+    <string name="Teams">Teams</string>
+    <string name="total">Total</string>
+    <string name="penalty">Penalty</string>
+    <string name="endGame">End Game</string>
+    <string name="teleop">Teleop</string>
+    <string name="autoBonus">Auto Bonus</string>
+    <string name="auto">Auto</string>
+    <string name="autonomous">Autonomous</string>
+    <string name="share">Share</string>
+    <string name="stats">Stats</string>
+    <string name="forecast">Forecast</string>
+    <string name="enableForecast">Enable Forecast</string>
+    <string name="disableForecast">Disable Forecast</string>
+    <string name="predictedResult">Predicted Result</string>
+    <string name="noResultYet">No Result Yet</string>
+    <string name="myDetailedMatch">My Detailed Match</string>
+    <string name="predictedBreakdown">Predicted Breakdown</string>
+    <string name="statInfo">Stat Info</string>
+    <string name="file">File</string>
+    <string name="save">Save</string>
+    <string name="load">Load</string>
+    <string name="details">Details</string>
+    <string name="offense">OPRm</string>
+    <string name="defense">Dif</string>
+    <string name="combined">CPRm</string>
+    <string name="teamBreakdown">Team Breakdown</string>
+    <string name="title_activity_stat_details">StatDetailsActivity</string>
+    <string name="margin">CPRm</string>
+    <string name="difference">Dif</string>
+    <string name="clearAll">Clear All</string>
+    <string name="lastReceivedData">LastReceivedData</string>
+    <string name="detailedStats">Detailed Stats</string>
+    <string name="type">Type</string>
+
+</resources>

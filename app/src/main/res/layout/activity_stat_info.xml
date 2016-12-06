@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.wrgardnersoft.watchftctournament.LauncherActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="0dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="Explanation of Statistics"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:textSize="20sp"
+                android:padding="8dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="CPRm: Combined Power Rating, an estimated contribution to winning margin with offense and defense"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="CPRm is an estimate of the number of points a team will contribute to their alliance's winning margin, through a combination of better offense, better defense, and fewer penalties compared to the average team in the tournament.  A positive CPRm is good!"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="This starts as the average winning margin for the team's alliances, and gradually becomes similar to the traditional Combined Contribution to Winning Margin (CCWM) measure as more matches are played."
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="OPRm: Offensive Power Rating, an estimated offensive contribution"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="OPRm is an estimate of the number of points a team can score minus the number of penalty points they are likely to grant the other team, compared to the average team.  A positive OPRm is good!"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="This starts as the average points scored by the team's alliances relative to the average, and gradually approaches the traditional Offensive Power Rating (OPR) as more matches played."
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Dif: difference between CPRm and OPRm"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Dif measures a combination of the strength of the opposing alliances a team has faced and the strength of that team's defense.  A positive Dif is good for a team, and signifies that the team's opponents have scored fewer points than average by that amount."
+                                android:textSize="16sp"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Match Forecast:"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Forecasting is done by adding the scores for both teams on an alliance, the scores for the opposing alliance penalties, and the average scores.  This can occasionally result in negative forecast predictions for specific score items or for total scores if two particularly low scoring teams play together on an alliance."
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="For three team alliances in elimination rounds, the forecast sums the scores for the three teams and scales the result by 2/3.  Different results may occur when two specific teams are paired on the field at one time.  Check the specific team breakdowns by tapping on the team names in the Match Prediction screen to see how each team on a particular alliance contributes to the alliance total."
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="For more detailed information on how the stats are specifically computed, contact the app developer via Google Play."
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ftc_rank_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingRight="10dp">
+
+
+    <TextView
+        android:id="@+id/rank"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:text="254"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:singleLine="true"
+        android:text="254"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/qp"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="(12-0-0)"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/rp"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="(12-0-0)"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/highest"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:gravity="center_horizontal"
+        android:text="(12-0-0)"
+        android:textColor="@color/gray"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/mp"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="(12-0-0)"
+        android:gravity="center_horizontal"
+        android:textColor="@color/gray"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ftc_rank_row1_container"
+        android:singleLine="true"
+        android:text="254"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

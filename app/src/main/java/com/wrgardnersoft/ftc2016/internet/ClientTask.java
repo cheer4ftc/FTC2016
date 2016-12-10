@@ -409,6 +409,12 @@ public class ClientTask extends AsyncTask<Void, Void, Void> {
               blueTeam[matchRowNum] = cols.get(1).text();
               j++;
             }
+            try {
+              Integer.parseInt(redTeam[2]);
+            } catch (Exception e) { // empty 3rd team: small tournament
+              redTeam[2]="0";
+              blueTeam[2]="0";
+            }
 
             myApp.match[myApp.division()].add(new Match(j - 1,
                 title,

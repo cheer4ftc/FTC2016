@@ -29,21 +29,21 @@
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:text="CPRm: Combined Power Rating, an estimated contribution to winning margin with offense and defense"
+                android:text="CPRm: Combined Power Rating, an estimated combined contribution to winning with offense and defense"
                 android:textSize="16sp"
                 android:padding="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:text="CPRm is an estimate of the number of points a team will contribute to their alliance's winning margin, through a combination of better offense, better defense, and fewer penalties compared to the average team in the tournament.  A positive CPRm is good!"
+                android:text="CPRm is an estimate of the number of points a team will contribute to their alliance's winning margin, through a combination of better offense, better defense, and fewer penalties compared to the average team in the tournament. An above average CPRm is good!"
                 android:textSize="16sp"
                 android:padding="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:text="This starts as the average winning margin for the team's alliances, and gradually becomes similar to the traditional Combined Contribution to Winning Margin (CCWM) measure as more matches are played."
+                android:text="This starts as the average winning margin for the team's alliances plus the average match score, and gradually becomes similar to the traditional Combined Contribution to Winning Margin (CCWM) measure plus the average match score as more matches are played."
                 android:textSize="16sp"
                 android:padding="8dp"
                 android:layout_width="match_parent"
@@ -57,7 +57,7 @@
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:text="OPRm is an estimate of the number of points a team can score minus the number of penalty points they are likely to grant the other team, compared to the average team.  A positive OPRm is good!"
+                android:text="OPRm is an estimate of the number of points a team can score minus the number of penalty points they are likely to grant the other team, compared to the average team.  An above average OPRm is good!"
                 android:textSize="16sp"
                 android:padding="8dp"
                 android:layout_width="match_parent"
@@ -78,7 +78,7 @@
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:text="Dif measures a combination of the strength of the opposing alliances a team has faced and the strength of that team's defense.  A positive Dif is good for a team, and signifies that the team's opponents have scored fewer points than average by that amount."
+                android:text="Dif measures a combination of the strength of the opposing alliances a team has faced and the strength of that team's defense.  A positive Dif is good for a team, and signifies that the team's opponents have scored fewer points than average by that amount (due to some combination of defense and a lucky draw)."
                                 android:textSize="16sp"
                 android:padding="8dp"
                 android:layout_width="match_parent"

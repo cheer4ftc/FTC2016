@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.wrgardnersoft.ftc2016.R;
 import com.wrgardnersoft.ftc2016.interfaces.AsyncResponse;
+import com.wrgardnersoft.ftc2016.internet.ClientTask;
 import com.wrgardnersoft.ftc2016.internet.TournamentPagesTask;
 import com.wrgardnersoft.ftc2016.models.MyApp;
 
@@ -30,7 +31,7 @@ public class SetupActivity extends ActionBarActivity implements AsyncResponse{
 
     TournamentPagesTask tournamentPagesTask;
 
-
+    ClientTask clientTask;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -187,6 +188,8 @@ public class SetupActivity extends ActionBarActivity implements AsyncResponse{
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        myApp.clear();
 
         // jump to next activity
         Intent getNameScreenIntent = new Intent(this, FtcRankingsActivity.class);

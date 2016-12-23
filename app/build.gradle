@@ -8,8 +8,8 @@ android {
         applicationId "com.wrgardnersoft.ftc2016"
         minSdkVersion 15
         targetSdkVersion 22
-        versionCode 12
-        versionName "1.11"
+        versionCode 13
+        versionName "1.12"
     }
     buildTypes {
         release {

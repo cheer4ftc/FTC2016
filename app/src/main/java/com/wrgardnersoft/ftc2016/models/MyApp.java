@@ -135,6 +135,16 @@ public class MyApp extends Application {
 
     }
 
+    public static void clear() {
+        MyApp myApp = MyApp.getInstance();
+        for (int d = 0; d < 2; d++) {
+            myApp.team[d].clear();
+            myApp.teamFtcRanked[d].clear();
+            myApp.match[d].clear();
+            myApp.teamStatRanked[d].clear();
+        }
+    }
+
     public static void loadTournamentData(BufferedReader br) {
         MyApp myApp = MyApp.getInstance();
         try {

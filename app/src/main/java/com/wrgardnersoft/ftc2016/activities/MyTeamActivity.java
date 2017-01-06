@@ -193,8 +193,9 @@ public class MyTeamActivity extends CommonMenuActivity implements AsyncResponse 
         listDataHeader = new ArrayList<>();
         listDataChild = new HashMap<>();
         Match.prepareListData(myMatch, listDataHeader, listDataChild);
+        MyApp myApp = MyApp.getInstance();
         MatchesExpandableListAdapter listAdapter = new MatchesExpandableListAdapter(this,
-                listDataHeader, listDataChild);
+                listDataHeader, listDataChild, myApp.currentTeamNumber);
         expListView.setAdapter(listAdapter);
 
         expListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {

@@ -80,7 +80,7 @@ public class MatchesActivity extends CommonMenuActivity implements AsyncResponse
         listDataChild = new HashMap<>();
         Match.prepareListData(localMatch, listDataHeader, listDataChild);
         MatchesExpandableListAdapter listAdapter = new MatchesExpandableListAdapter(this,
-                listDataHeader, listDataChild);
+                listDataHeader, listDataChild,-1);
         expListView.setAdapter(listAdapter);
 
         expListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {

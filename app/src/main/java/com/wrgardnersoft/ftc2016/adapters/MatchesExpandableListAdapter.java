@@ -24,12 +24,14 @@ public class MatchesExpandableListAdapter extends BaseExpandableListAdapter {
     private List<String> _listDataHeader; // header titles
     // child data in format of header title, child title
     private HashMap<String, List<Match>> _listDataChild;
+    private int boldTeam;
 
     public MatchesExpandableListAdapter(Context context, List<String> listDataHeader,
-                                        HashMap<String, List<Match>> listChildData) {
+                                        HashMap<String, List<Match>> listChildData, int boldTeam) {
         this._context = context;
         this._listDataHeader = listDataHeader;
         this._listDataChild = listChildData;
+        this.boldTeam=boldTeam;
     }
 
     @Override
@@ -80,6 +82,38 @@ public class MatchesExpandableListAdapter extends BaseExpandableListAdapter {
         holder.blue0View.setText(String.valueOf(child.teamNumber[MyApp.BLUE][0]));
         holder.blue1View.setText(String.valueOf(child.teamNumber[MyApp.BLUE][1]));
         holder.blue2View.setText(String.valueOf(child.teamNumber[MyApp.BLUE][2]));
+
+        if (child.teamNumber[MyApp.RED][0] == boldTeam) {
+            holder.red0View.setTypeface(null,Typeface.BOLD);
+        } else {
+            holder.red0View.setTypeface(null,Typeface.NORMAL);
+        }
+        if (child.teamNumber[MyApp.RED][1] == boldTeam) {
+            holder.red1View.setTypeface(null,Typeface.BOLD);
+        } else {
+            holder.red1View.setTypeface(null,Typeface.NORMAL);
+        }
+        if (child.teamNumber[MyApp.RED][2] == boldTeam) {
+            holder.red2View.setTypeface(null,Typeface.BOLD);
+        } else {
+            holder.red2View.setTypeface(null,Typeface.NORMAL);
+        }
+
+        if (child.teamNumber[MyApp.BLUE][0] == boldTeam) {
+            holder.blue0View.setTypeface(null,Typeface.BOLD);
+        } else {
+            holder.blue0View.setTypeface(null,Typeface.NORMAL);
+        }
+        if (child.teamNumber[MyApp.BLUE][1] == boldTeam) {
+            holder.blue1View.setTypeface(null,Typeface.BOLD);
+        } else {
+            holder.blue1View.setTypeface(null,Typeface.NORMAL);
+        }
+        if (child.teamNumber[MyApp.BLUE][2] == boldTeam) {
+            holder.blue2View.setTypeface(null,Typeface.BOLD);
+        } else {
+            holder.blue2View.setTypeface(null,Typeface.NORMAL);
+        }
 
         final MyApp myApp = MyApp.getInstance();
 
